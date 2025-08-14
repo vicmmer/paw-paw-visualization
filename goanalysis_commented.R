@@ -336,7 +336,8 @@ combine_topgo("annonaceae")
 #  ---- 4. Load the combined TSVs back in and look at them  ----
 
 annonaceae <- read.delim("annonaceae_ALL_topgo.tsv", sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
-View(annonaceae)   # open in RStudio viewer so I can scroll/filter
+View(annonaceae)   # reload to see if it looks nice and pretty :P 
 
 pawpaw <- read.delim("pawpaw_ALL_topgo.tsv", sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
 View(pawpaw)       # same thing for pawpaw
+
