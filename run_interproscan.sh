@@ -35,6 +35,6 @@ done
 
 #Note: run inside a screen: 
 #screen -L -S interproscan 
-#find /home/vmartinez/september2_pipeline_rerun/orthofinder_output/Results_Sep02/Orthogroup_Sequences \
+#find orthofinder_output/Results_Sep02/Orthogroup_Sequences \
 #  -maxdepth 1 -type f -name '*.fa' -print0 \
-#| parallel -0 -j 40 /home/vmartinez/september2_pipeline_rerun/run_interproscan.sh {}
+# | parallel -0 -j 40 --eta --verbose ./run_interproscan.sh {}
