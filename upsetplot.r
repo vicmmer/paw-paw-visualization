@@ -12,6 +12,7 @@ selected_species
 ncol(orthogroups_df)
 
 #Need to take out list of orthogroups that didnt have any results from interproscan, retroelements, or transposon/transposase related
+#the include_orthogroups.txt is one of the outputs from running the filter_interpro_tsv.sh on the run_interproscan.sh results
 include_ogs <- read.table("include_orthogroups.txt", header = FALSE, stringsAsFactors = FALSE)[,1]
 
 # Filter dataframe
